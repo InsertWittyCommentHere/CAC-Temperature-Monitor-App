@@ -231,18 +231,18 @@ table.dataframe th, .dataframe td {
     </head>
     <body>
 	<div class="topnav">
-  <a class="active" href="{{ url_for('read2') }}">Home</a>
+ 		<a class="active" href="{{ url_for('read2') }}">Epidemic Management</a>
+		<p> Hello Admin!! </p>
 
   <a class="logout" href="{{ url_for('logout') }}">Logout</a>
 </div>
 
 
 	    <div style="overflow-x: auto;" align="center">
-		    <p> Welcome to Epidemic Management!! </p>
 		    <br>
-		    <p> Hello Admin!! </p>
+		    
 		      <a href="{{ url_for('read2') }}">Take Temperature</a>
-  		      <a href="{{ url_for('plotgraphs') }}">View Data</a>
+  		      <a href="{{ url_for('plotgraphs') }}">Health Dashboard</a>
 	</div>
     </body>
 </html>
