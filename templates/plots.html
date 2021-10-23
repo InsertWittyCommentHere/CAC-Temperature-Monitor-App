@@ -230,11 +230,12 @@ table.dataframe th, .dataframe td {
 </style>
  <body>
 
- <div class="topnav">
-  <a class="active" href="{{ url_for('read2') }}">Epidemic Management</a>
-  <a href="{{ url_for('read2') }}">Scan Temperature</a>
-  <a href="{{ url_for('plotgraphs') }}">Health Dashboard</a>
-  <a class="logout" href="{{ url_for('logout') }}">Logout</a>
+ <div class="topnav"> 
+ 	<img src="https://www.un.org/sites/un2.un.org/files/field/image/1583952355.1997.jpg" height="52px" width="85px" alt="Icon">
+  	<a class="active" href="{{ url_for('read2') }}">Epidemic Management</a>
+  	<!---<a href="{{ url_for('getTemp') }}">Take Temperature</a>
+  	<a href="{{ url_for('plotgraphs') }}">Health Dashboard</a> 
+  	<a class="logout" href="{{ url_for('logout') }}">Logout</a>--->
 </div>
 
  <h1>All Data</h1>
