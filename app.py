@@ -127,7 +127,7 @@ def getTemp():
             else:
                 color = 'red'
             fwrite(dt_string + " , " + barcode_read + " , " + session.get('temp') + " , " + color + "\n")
-            return render_template('index2.html')
+            return render_template('temperature.html')
         except Exception as e:
             print(e)
             print("something wrong happened")
