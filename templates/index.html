@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<p id="temp">Object Temp: 0</p>
+<script>
+const Http = new XMLHttpRequest();
+const url='http://localhost:5000/temp';
+
+function checkTemp(){
+   Http.open("GET", url);
+   Http.send();
+  Http.onreadystatechange = (e) => {
+    document.querySelector("#temp").innerHTML = "Object Temp: " + Http.responseText;
+  }
+}
+
+setInterval(checkTemp, 5000);
+</script>
+</body>
+</html>

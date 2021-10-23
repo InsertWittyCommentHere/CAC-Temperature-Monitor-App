@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperature Reading index3</title>
+    </head>
+    <body>
+        <form action="/" method="post">
+            <div style="overflow-x: auto;">
+                <table style="border-collapse: collapse; width: 100%;" border="1">
+                    <tbody>
+                        <tr>
+                            <td style="width: 50%;" colspan="2">
+                                <button id="homepage" name="home">home</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+
+        <form action="/read" method="post">
+            <div style="overflow-x: auto;">
+                <table style="border-collapse: collapse; width: 100%;" border="1">
+                    <tbody>
+                        <tr>
+                            <td style="width: 50%;">Temperature Reading</td>
+                            <td style="width: 50%; background-color:#FF0000">
+                            <p>{{ temperature }}</p>
+                        </tr>
+                        <tr>
+                            <td style="width: 50%;">Scan Barcode</td>
+                            <td style="width: 50%;"><input type="text" name="barcode" onkeydown="return (event.keyCode!=13);"></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50%;" colspan="2">
+                                <button id="submit" name="submit" type="submit">Submit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>
+

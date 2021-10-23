@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperature Reading</title>
+    </head>
+    <body>
+        <label>Scan: </label>
+        <input>
+	<form action="/temp" method="post">
+        	<button name="forwardBtn" type="submit">Take Temperature</button>
+        	<p>{{ temperature }} </p>
+        </form>
+        <br>
+        <br>
+        <button>Submit Scan and Temperature</button>
+    </body>
+</html>
