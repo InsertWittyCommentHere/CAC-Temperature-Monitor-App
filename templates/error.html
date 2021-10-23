@@ -85,7 +85,7 @@ body {
 }
 
 .topnav a {
-  float: left;
+  float: center;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -93,14 +93,28 @@ body {
   font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav p {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+	
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav a.active:hover {
   background-color: #ddd;
   color: black;
 }
 
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 .topnav a.logout {
@@ -270,9 +284,7 @@ table.dataframe th, .dataframe td {
 <div class="topnav">
 		<img src="https://www.un.org/sites/un2.un.org/files/field/image/1583952355.1997.jpg" height="52px" width="85px" alt="Icon">
  		<a class="active" href="{{ url_for('read2') }}">Epidemic Management</a>
-		<p> Hello Admin!! </p>
-
-  <a class="logout" href="{{ url_for('logout') }}">Logout</a>
+  		<a class="logout" href="{{ url_for('logout') }}">Logout</a>
 </div>
 <!--- <div class="topnav">
   <a class="active" href="{{ url_for('read2') }}">Home</a>
