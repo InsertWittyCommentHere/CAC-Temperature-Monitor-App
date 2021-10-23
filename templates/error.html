@@ -267,13 +267,19 @@ table.dataframe th, .dataframe td {
 </style>
 	</head>
 		<body class="loading">
+<div class="topnav">
+		<img src="https://www.un.org/sites/un2.un.org/files/field/image/1583952355.1997.jpg" height="52px" width="85px" alt="Icon">
+ 		<a class="active" href="{{ url_for('read2') }}">Epidemic Management</a>
+		<p> Hello Admin!! </p>
 
- <div class="topnav">
+  <a class="logout" href="{{ url_for('logout') }}">Logout</a>
+</div>
+<!--- <div class="topnav">
   <a class="active" href="{{ url_for('read2') }}">Home</a>
   <a href="{{ url_for('read2') }}">Scan Temperature</a>
   <a href="{{ url_for('plotgraphs') }}">View Data</a>
   <a class="logout" href="{{ url_for('logout') }}">Logout</a>
-</div>
+</div> --->
 	        	<div id="main">
     				<div class="fof">
         				<h1>Error 500 :( </h1>
