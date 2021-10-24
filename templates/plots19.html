@@ -43,13 +43,6 @@ body {
   margin: auto;
   width: 50%;
   overflow: hidden;
-  background-color: #333;
-}
-
-.topnav {
-  margin: auto;
-  width: 50%;
-  overflow: hidden;
   background-color: #000000;
 }
 
@@ -76,6 +69,8 @@ body {
   color: white;
   text-align: left;
   float: left;
+  margin: 5px 10px;
+
 }
 
 .topnav a.active:hover {
@@ -97,7 +92,7 @@ body {
 
 
 
- *{
+*{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -256,9 +251,9 @@ table.dataframe th, .dataframe td {
  <body>
   <div class="topnav">
   <img src="https://www.un.org/sites/un2.un.org/files/field/image/1583952355.1997.jpg" height="52px" width="85px" alt="Icon" align="left">
-  <a class="active" href="{{ url_for('read2') }}">Epidemic Management</a>
-  <a class="active" href="{{ url_for('plotgraphs') }}">Health Dashboard</a>
-  <a class="logout" href="{{ url_for('logout') }}">Logout</a>
+	<a class="active" href="{{ url_for('read2') }}">Epidemic Management</a>
+	<a class="active" href="{{ url_for('plotgraphs') }}">Health Dashboard</a>
+	<a class="logout" href="{{ url_for('logout') }}">Logout</a>
 </div>
 <br>
 <br>
