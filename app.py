@@ -37,7 +37,8 @@ except Exception as e:
     print("GPIO is not defined. Read Exception", e)
 
 def fwrite(data):
-    f = open("readings.txt", "a")
+    #f = open("readings.txt", "a")
+    f = open("out.csv", "a")
     f.write(data)
     f.close()
 
@@ -80,10 +81,45 @@ def getstats(d):
 
 @app.route('/read1', methods=['POST', 'GET'])
 def read2():
-    return render_template('index2.html')
+    if request.method == 'POST':
+        print(request.form['username'])
+        print(request.form['password'])
+        if request.form['username'] == "user" and request.form['password'] == "password":
+            return render_template('index2.html')
+        else:
+            return render_template('login.html', login_err="\nLogin Failed, please try again")
+    elif request.method == 'GET':
+        return render_template("index2.html")
+    else:
+        return render_template("error.html")
+
 
 @app.route('/read2', methods=['POST', 'GET'])
 def getTemp():
+    if request.method == 'POST':
+         try:
+             print("inside POST try")
+             barcode_read = request.form['barcode']
+             print(barcode_read, session.get('temp'))
+
+             # dd/mm/YY H:M:S
+             now = datetime.now()
+             dt_string = now.strftime("%Y-%m-%d")
+             temp = session['temp']
+             print(temp)
+             if float(temp) < 99.5:
+                 color = 'Normal'
+             else:
+                 color = 'High'
+             barcode_read = barcode_read.replace(',', ' ')
+             fwrite(dt_string + "," + barcode_read + "," + session.get('temp') + "," + color + ",Not provided,Not provided" + "\n")
+             return render_template("index2.html")
+         except Exception as e:
+             print(e)
+             print("something wrong happened")
+             return render_template('error.html')
+    print(request.method)
+
     if request.method == 'GET':
         print("inside get-temp GET try")
         try:
@@ -96,14 +132,14 @@ def getTemp():
             session['temp'] = str
             if float(str) >= 99.5:
                 red_led()
-                return render_template("redindex3.html", temperature=str)
+                return render_template("temperature_red.html", temperature=str)
 
             if float(str) < 99.5:
                 green_led()
                 GPIO.output(6, GPIO.HIGH)
                 time.sleep(3)
                 GPIO.output(6, GPIO.LOW)
-                return render_template('index3.html', temperature=str)
+                return render_template('temperature_green.html', temperature=str)
         except OSError as error :
             print(error)
             print("It looks like MLX sensor have trouble connecting. Try running i2cdetect command!")
@@ -112,28 +148,6 @@ def getTemp():
             print("Something went wrong")
             print("Likely something is not defined")
             return render_template('error.html')
-
-    if request.method == 'POST':
-        try:
-            print("inside POST try")
-            barcode_read = request.form['barcode']
-            print(barcode_read, session.get('temp'))
-
-            # dd/mm/YY H:M:S
-            now = datetime.now()
-            dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-            if temp < 99.5:
-                color = 'green'
-            else:
-                color = 'red'
-            fwrite(dt_string + " , " + barcode_read + " , " + session.get('temp') + " , " + color + "\n")
-            return render_template('temperature.html')
-        except Exception as e:
-            print(e)
-            print("something wrong happened")
-            return render_template('error.html')
-
-
 
 @app.route('/', methods=['POST', 'GET'])
 def index2():
