@@ -147,7 +147,7 @@ def getTemp():
         except Exception as e:
             print("Something went wrong")
             print("Likely something is not defined")
-            return render_template('error.html')
+            return render_template('connectionError.html')
 
 @app.route('/', methods=['POST', 'GET'])
 def index2():
