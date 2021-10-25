@@ -143,7 +143,7 @@ def getTemp():
         except OSError as error :
             print(error)
             print("It looks like MLX sensor have trouble connecting. Try running i2cdetect command!")
-            return render_template('error.html')
+            return render_template('connectionError.html')
         except Exception as e:
             print("Something went wrong")
             print("Likely something is not defined")
