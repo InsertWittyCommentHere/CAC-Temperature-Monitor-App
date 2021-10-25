@@ -359,7 +359,7 @@ def plot19():
     df = df_20211019
 
     # Scatter chart
-    fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-19')
+    fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-19', 
         color_discrete_map={
             "High": "red",
             "Normal": "green"})
@@ -393,7 +393,7 @@ def plot20():
     df = df_20211020
 
     # Scatter chart
-    fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-20')
+    fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-20', 
         color_discrete_map={
             "High": "red",
             "Normal": "green"})
@@ -427,7 +427,7 @@ def plot21():
     df = df_20211021
 
     # Scatter chart
-    fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-21')
+    fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-21', 
         color_discrete_map={
             "High": "red",
             "Normal": "green"})
