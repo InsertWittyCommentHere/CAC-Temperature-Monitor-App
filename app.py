@@ -192,7 +192,11 @@ def plotgraphs():
     graphJSON_bar = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
     # Scatter chart
-    fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot')
+    fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot', 
+    color_discrete_map={
+        "High": "red",
+        "Normal": "green"})
+
     graphJSON_scatter = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
     df_20211016_stats = []
@@ -253,7 +257,11 @@ def plot16():
     df = df_20211016
 
     # Scatter chart
-    fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-16')
+    fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-16',
+        color_discrete_map={
+            "High": "red",
+            "Normal": "green"})
+
     graphJSON_scatter = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
     df_20211016_stats = getstats(df_20211016)
@@ -283,7 +291,11 @@ def plot17():
     df = df_20211017
 
     # Scatter chart
-    fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-17')
+    fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-17', 
+        color_discrete_map={
+            "High": "red",
+            "Normal": "green"})
+
     graphJSON_scatter = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
     df_20211017_stats = getstats(df_20211017)
@@ -313,7 +325,11 @@ def plot18():
     df = df_20211018
 
     # Scatter chart
-    fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-18')
+    fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-18',
+        color_discrete_map={
+            "High": "red",
+            "Normal": "green"})
+
     graphJSON_scatter = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
     df_20211018_stats = getstats(df_20211018)
@@ -344,6 +360,10 @@ def plot19():
 
     # Scatter chart
     fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-19')
+        color_discrete_map={
+            "High": "red",
+            "Normal": "green"})
+
     graphJSON_scatter = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
     df_20211019_stats = getstats(df_20211019)
@@ -374,6 +394,10 @@ def plot20():
 
     # Scatter chart
     fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-20')
+        color_discrete_map={
+            "High": "red",
+            "Normal": "green"})
+
     graphJSON_scatter = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
     df_20211020_stats = getstats(df_20211020)
@@ -404,6 +428,10 @@ def plot21():
 
     # Scatter chart
     fig = px.scatter(df, x='name', y='temp', color='status', title='Scatter Plot 2021-10-21')
+        color_discrete_map={
+            "High": "red",
+            "Normal": "green"})
+
     graphJSON_scatter = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
     df_20211021_stats = getstats(df_20211021)
