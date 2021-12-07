@@ -1,21 +1,21 @@
-18/10/2021 21:21:00 ; cox, abigail b. ; 97.93 ; green
-18/10/2021 21:21:59 ; patel, dhir c. ; 97.39 ; green
-18/10/2021 21:24:42 ; galu, david k. ; 96.63 ; green
-18/10/2021 21:25:55 ; saggu, fateh ; 98.17 ; green
-18/10/2021 21:31:57 ; davis, kai j. ; 97.67 ; green
-18/10/2021 21:33:15 ; patel ansh b. ; 97.79 ; green
-18/10/2021 21:37:27 ; alexander, lincoln ; 97.65 ; green
-18/10/2021 21:41:45 ; indraganti, nandini ; 97.36 ; green
-18/10/2021 21:44:52 ; thakker, anya s. ; 97.90 ; green
-18/10/2021 22:04:30 ; dalal, rishabh h.; 96.35 ; green
-18/10/2021 22:06:38 ; malik, shreshth ; 96.78 ; green
-18/10/2021 22:10:58 ; thielen, catherine j. ; 95.85 ; green
-18/10/2021 22:13:20 ; prabu, mridula ; 91.06 ; green
-18/10/2021 22:16:02 ; zhang, carolyn l. ; 96.35 ; green
-18/10/2021 22:20:08 ; anandula, slokha ; 94.80 ; green
-18/10/2021 22:23:21 ; zmyslowski, emily e. ; 96.93 ; green
-18/10/2021 22:26:22 ; kabra, stuti ; 93.69 ; green
-18/10/2021 22:29:54 ; mudda, sriharsha naga ; 96.10 ; green
-18/10/2021 19:46:51 ; wada, kanna s. ; 98.15 ; green
-18/10/2021 19:48:08 ; sharma, ira ; 96.75 ; green
-18/10/2021 19:50:06 ; herman, elliott ; 99.16 ; green
+18/10/2021 21:21:00 ; rich, kimberly ; 97.93 ; green
+18/10/2021 21:21:59 ; rodricks, andrea ; 97.39 ; green
+18/10/2021 21:24:42 ; schuman, lois ; 96.63 ; green
+18/10/2021 21:25:55 ; clark, ken ; 98.17 ; green
+18/10/2021 21:31:57 ; visher, ernest ; 97.67 ; green
+18/10/2021 21:33:15 ; wilson, thomas ; 97.79 ; green
+18/10/2021 21:37:27 ; cruz, judith ; 97.65 ; green
+18/10/2021 21:41:45 ; moor, arnold ; 97.36 ; green
+18/10/2021 21:44:52 ; kim, debra ; 97.90 ; green
+18/10/2021 22:04:30 ; viggins, bernard ; 96.35 ; green
+18/10/2021 22:06:38 ; oreo, christopher ; 96.78 ; green
+18/10/2021 22:10:58 ; staton, charles ; 95.85 ; green
+18/10/2021 22:13:20 ; presley, elvis ; 91.06 ; green
+18/10/2021 22:16:02 ; miller, warren ; 96.35 ; green
+18/10/2021 22:20:08 ; duren, josephine ; 94.80 ; green
+18/10/2021 22:23:21 ; wilson, ken ; 96.93 ; green
+18/10/2021 22:26:22 ; cruz, quinn ; 93.69 ; green
+18/10/2021 22:29:54 ; lin, kim ; 96.10 ; green
+18/10/2021 19:46:51 ; perez, marie ; 98.15 ; green
+18/10/2021 19:48:08 ; norris, queen ; 96.75 ; green
+18/10/2021 19:50:06 ; henderson, mark ; 99.16 ; green
